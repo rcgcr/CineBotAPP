@@ -1,3 +1,1 @@
-from base_chatbot import base_chatbot
-
-base_chatbot
+import base_chatbot.base_chatbot
