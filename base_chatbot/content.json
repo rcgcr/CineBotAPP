@@ -1,0 +1,122 @@
+{"intents":
+  [
+    {
+      "tag":"greeting",
+      "input":["oi","olá"],
+      "responses":[
+          "Olá prazer! Eu sou o Cinebot, um bot criado para te indicar filmes.Fui criado como um estudo simples de I.A e pego as minhas informações do TMDB(The Movie Data Base) e também o JustWatch(para indicar onde você pode assistir o filme).Para saber mais sobre mim, como funciono ou mais informações sobre meu criador.Você pode pesquisar através de palavras chaves como por exemplo: Sobre você, Como você funciona ou Sobre seu criador. Espero que eu possa ter ajudado a encontrar um filme que você goste!"
+        ]
+    },
+
+    {
+      "tag":"whoareyou",
+    "input":["quem é você?","o que você faz?","qual o seu nome?","como você se chama?", "me fale sobre você."],
+    "responses":[
+          "Eu sou um bot feito em Tensorflow, para te indicar um filme baseado em algum filme, elenco(ator/atriz) ou equipe(direção, roteiro, produtor, etc.) que você tenha prefêrencia.",
+          "Eu busco filmes em um banco de dados do TMDB(The Movie Database) e Justwatch, através da API do Database para indicar um filme que melhor corresponda a sua preferencia.",
+          "Eu fui criado como um projeto simples de portfolio. Com intuito de ajudar as pessoas escolherem um filme. Podendo escolher baseado em um filme, equipe ou elenco."
+          
+        ]
+    },
+
+    {
+      "tag":"howtosearch",
+      "input":["como eu posso pesquisar?", "como você me indica um filme?", "como você funciona?"],
+      "responses":[
+          "Eu indico um filme baseado em quatro palavras chaves e também um para saber mais os erros que ocorrem: Filme, Elenco, Equipe, Detalhes e Erros. Para saber mais sobre cada palavra-chave escreva 'Me explique melhor sobre' e a palavra que você quer saber mais."
+          
+        ]
+    },
+
+    {
+      "tag":"keywordMovie",
+      "input":["Me explique sobre Filme"],
+      "responses":[
+          "Ao pesquisar sobre Filme eu te pedirei para fornecer o o nome do Filme e o Ano(não há problemas se não souber o Ano de lançamento, ele é importante para deixar a sua pesquisa mais assertiva, após a indicação dos filmes.)Eu junto informações como genero, palavras chaves e a sinopse. Para encontrar nas recomendações ou similares do TMDB, quais filmes mais se encaixam no perfil do filme que você me indicou. Eu dou uma lista de cinco filmes de forma aleatória com seus respectivos anos de lançamentos, para que você possa saber mais sobre algum filme específico."
+        ]
+    },
+
+    {
+      "tag":"keywordCast",
+      "input":["Me explique sobre Elenco", "Me explique sobre Equipe"],
+      "responses":[
+          "Ao escolher as palavras chaves Elenco ou Equipe. Vou pedir para que escreva o nome da pessoa que você está procurando para te mostrar uma lista aleatória de cinco filmes que essa pessoa participou e que função exerceu(no caso de Equipe). Após a lista a opção para pesquisar sobre os Detalhes do filme escolhido é liberada, por favor não esqueça de inlcuir o ano."
+        ]
+    },
+
+    {
+      "tag":"keywordDetail",
+      "input":["Me explique sobre Detalhes"],
+      "responses":[
+          "Ao escolher Detalhes eu te darei a opção para você escolher um filme e você pode ver os detalhes desse filme como: Titulo, Direção, Ano de Lançamento, Elenco, Sinopse e Onde assitir/alugar/comprar(essa informação é fornecido pelo banco de dados JustWatch)."]
+    },
+
+    {
+      "tag":"keywordError",
+      "input":["Me explique sobre Erros", "Erros"],
+      "responses":[
+          "Infelizmente alguns erros podem acontecer. Em sua maioria eles acontecem por não encontrar um nome correspondente no banco de dados do TMDB, seja por que não existe ou porque a grafia do nome em portugues não condiz em como foi registrado no banco de dados. Um exemplo é o filme 'Os doze macacos' que não encontra resultado mas se você procurar por 'Os 12 Macacos' ele consegue encontrar o filme. É uma questão de como funciona a pesquisa no banco de dados do TMDB. Peço desculpas pelo incoveniente.",
+          "Algumas vezes você pode encontrar indicações de título em outra língua. Se for em inglês peço que digite o nome, juntamente com o ano, como mostra na lista de indicações para obter mais informações sobre este filme."
+
+        ]
+    },
+    
+    {
+      "tag":"aboutcreator",
+      "input":["quem foi que te criou?", "sobre quem te desenvolveu?", "sobre o seu desevolvedor", "seu desenvolvedor"],
+      "responses":[
+          "Olá, prazer em te conhecer! Me chamo Rafael C. G. Cabeça Reis Sant'Anna(sim, o sobrenome Cabeça é de verdade, rs.) tenho 33 anos, sou casado e pai de três crianças. Comecei na programação vendo uma oportunidade de mudança de carreira, sou formado em Produção Musical, e sempre gostei da área de jogos(que foi a ponte para a programação). Criar músicas e efeitos sonoros para jogos é um desafio por si só e que me ajudou a ter um pouco de noção de 'lógica de programação', já que é preciso criar versões de música e efeitos para as diferentes ações que o jogador possa realizar. Obtive experiência através de GameJam nacionais e internacionais para poder ter uma experiência mais proxima da real e poder me aprimorar cada vez mais. Até que percebi que também gostaria de fazer os meus próprios jogos. Fiz alguns projetos e achei melhor estudar programação mais afundo para ter mais facilidade de criar os jogos que queria. Desde então estudo Python(obrigado Freecode.org!) de forma autoditada e através dele me encontrei nas Ciência de Dados, área que vejo muito potencial, não só pelo crescimento das I.A, mas também como forma de auxiliar, através dos dados, a ter uma melhor compreensão sobre o universo e a nossa sociedade. Esse é o meu primeiro projeto de programção que divulgo. Espero que você goste do que encontrar aqui. Para mais informações por favor acesse 'Sobre Mim'.Muito Obrigado por perguntar!"
+        ]
+    },
+
+    {
+      "tag":"detailMovie",
+      "input":["gostaria de saber mais sobre esse filme", "me diga a ficha técnica deste filme", "Detalhes", "detalhe"],
+      "responses":[
+          "Sim, claro! Sobre qual filme vocẽ gostaria de saber mais detalhes?",
+          "Digite o nome do filme que deseja informações."
+        ]
+    },
+    
+    {
+      "tag":"searchfilm",
+      "input":["Me indique um filme!Por favor.","Filme"],
+      "responses":[
+          "Sim, claro! Você poderia me dizer o ultimo filme que você gostou de assitir?",
+          "Você tem algum filme para eu basear a minha indicação?"
+        ]
+    },
+
+    {
+      "tag":"searchcast",
+      "input":["eu gostaria de escolher um ator/atriz.", "Elenco"],
+      "responses":[
+          "Claro! Me diga quem é seu ator/atriz favorito:",
+          "Sem problemas! Sobre qual ator/atriz você quer saber mais?",
+          "Me diga o nome de um ator/atriz:",
+          "Me fale sobre um ator/atriz:"
+          ]
+    },
+
+    {
+      "tag":"searchcrew",
+      "input":[
+        "filmes de um diretor/diretora", "me diga os filmes do produtor(a)","me indique alguns filme de um(a) roterista","Equipe"],
+      "responses":[
+        "Sem problemas! Me diga o nome daa pessoa que você está procurando?"
+      ]
+    },
+
+    {
+      "tag":"goodbye",
+      "input":["muito Obrigado", "até logo","muito obrigado", "muito obrigada", "obrigado", "obrigada","tchau","falo valeu"],
+      "responses":[
+          "Bom Filme!",
+          "Espero que você tenha gostado da minha indicação!",
+          "Até a próxima!",
+          "Eu que agradeço!"
+
+           ]
+    }
+  ]
+}

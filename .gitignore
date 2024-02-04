@@ -1,0 +1,15 @@
+#virtual and settings
+CineBotEnv
+.vscode
+.vscode/settings.json
+#Base_chatbot files
+base_chatbot/__pycache__
+base_chatbot/chatterbot.py
+base_chatbot/cine_bot.py
+
+#detail ignore file
+details/__pycache__
+
+#tmdb_api 
+tmdb_api/__pycache__
+tmdb_api/api_key.py
